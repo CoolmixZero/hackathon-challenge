@@ -1,0 +1,162 @@
+html {
+    background-color: #262626;
+}
+
+template {
+    display: flex;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+@media screen and (max-width: 1000px) {
+    body > .homeText {
+        font-size: 6rem;
+    }
+
+    body > .searchSpace {
+        font-size: 1.9rem;
+    }
+    body > .fancyButton{
+        font-size: 1.9rem;
+    }
+}
+
+@media screen and (max-width: 660px) {
+    body > .homeText {
+        font-size: 3rem;
+    }
+
+    body > .searchSpace {
+        font-size: 1rem;
+    }
+
+    body > .fancyButton{
+        font-size: 1.6rem;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    body > .homeText {
+        font-size: 10rem;
+    }
+
+    body > .fancyButton {
+        font-size: 2.8rem;
+    }
+
+    body > .fancyButton{
+        font-size: 3.5rem;
+    }
+}
+
+@media screen and (min-width: 2000px) {
+    body > .homeText {
+        font-size: 16rem;
+    }
+
+    body > .searchSpace {
+        font-size: 4rem;
+    }
+
+    body > .fancyButton{
+        font-size: 7rem;
+    }
+}
+
+@media screen and (min-width: 3000px) {
+    body > .homeText {
+        font-size: 20rem;
+    }
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.homeText {
+    font-family: "Dancing Script", serif;
+    font-size: 6rem;
+    color: #F28C28;
+    margin-top: 5%;
+    transition: all;
+    transition-duration: 0.6s;
+}
+
+.searchSpace {
+    background-color: #292929;
+    margin-top: 3.5%;
+    font-size: 2.5rem;
+    width: 70vw;
+    height: 10vh;
+    border: 1px solid black;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, .64);
+    /*color: #F28C28;*/
+    color: white;
+    padding: 8px 16px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all;
+    transition-duration: 0.6s;
+}
+
+.searchSpace:focus-visible {
+    border: 2px solid #F28C28;
+}
+
+
+.fancyButton {
+    margin-top: 3%;
+    margin-bottom: 10%;
+    padding: 2% 4%;
+    color: rgba(0, 0, 0, 0);
+    font-family: 'Nunito', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.6vw;
+    background-color: rgba(0, 0, 0, 0);
+    border-color: rgba(0, 0, 0, 0);
+    transition: all ease 0.6s;
+    -moz-transition: all ease 0.6s; /* Firefox 4 */
+    -webkit-transition: all ease 0.6s; /* Safari and Chrome */
+    -o-transition: all ease 0.6s; /* Opera */
+    -ms-transition: all ease 0.6s; /* Explorer 10 */
+}
+
+.changeButton {
+    background-color: #F28C28;
+    color: black;
+    border-radius: 1000px;
+    box-shadow: 5px 5px 10px black;
+    /*display: block;*/
+}
+
+.router-view {
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+}
+
+.articleSection {
+    vertical-align: middle;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    position: center;
+    margin: 5%;
+    color: white;
+    background-color: #292929;
+    border: 2px solid #F28C28;
+    box-shadow: 6px 6px 12px rgba(0, 0, 0, .64);
+    padding: 1%;
+}
